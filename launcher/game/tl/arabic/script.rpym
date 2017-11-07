@@ -1,0 +1,21 @@
+﻿# هذا الملف يحتوي على كل نصوص اللعبه
+
+# استعمل السطر التالي لإظهار الصور في شاشة اللعب
+# image eileen happy = "eileen_happy.png"
+
+# من هي شخصيات هذه اللعبه؟
+define e = Character('إيلين', color="#c8ffc8")
+
+init python:
+    if not persistent.default_language_set:
+        persistent.default_language_set = True
+        _preferences.language = "arabic"
+
+# اللعبه تبدأ هنا
+label start:
+
+    e "لقد بدأت حكاية رينباي جديدة."
+
+    e "كل ما عليك فعله هو إضافة نصوص و صور و إرسالها للعالم!"
+
+    return
