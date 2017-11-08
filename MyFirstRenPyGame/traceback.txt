@@ -1,21 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' 'carrot_01.png.png'>:
-  File "game/script.rpy", line 35, in script
-    with fade
-IOError: Couldn't find file 'carrot_01.png.png'.
+While loading <'Image' 'carrot 03-2.png'>:
+  File "game/script.rpy", line 112, in script
+    e "The painter, who painted all of you as mermaids..."
+IOError: Couldn't find file 'carrot 03-2.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 35, in script
-    with fade
-  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/ast.py", line 1289, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/exports.py", line 1406, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/core.py", line 2123, in do_with
-    clear=clear)
+  File "game/script.rpy", line 112, in script
+    e "The painter, who painted all of you as mermaids..."
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/ast.py", line 624, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/exports.py", line 1173, in say
+    who(what, *args, **kwargs)
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/character.py", line 911, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/character.py", line 747, in do_display
+    **display_args)
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/character.py", line 523, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/ui.py", line 287, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/core.py", line 2553, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
   File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/core.py", line 2916, in interact_core
@@ -28,18 +34,6 @@ Full traceback:
     rv = d.render(widtho, heighto, st, at)
   File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/layout.py", line 702, in render
     surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/transition.py", line 178, in render
-    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
-  File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/display/transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
   File "renpy/display/render.pyx", line 110, in renpy.display.render.render (gen/renpy.display.render.c:3445)
     cpdef render(d, object widtho, object heighto, double st, double at):
   File "renpy/display/render.pyx", line 196, in renpy.display.render.render (gen/renpy.display.render.c:2983)
@@ -80,8 +74,8 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "/Users/matthewwallace/Documents/renpy-6.99.13-sdk/renpy/loader.py", line 548, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'carrot_01.png.png'.
+IOError: Couldn't find file 'carrot 03-2.png'.
 
 Darwin-16.7.0-x86_64-i386-64bit
 Ren'Py 6.99.13.2919
-MyFirstRenPyGame 1.0
+Knock knock 1.0

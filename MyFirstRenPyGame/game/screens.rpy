@@ -560,6 +560,8 @@ screen about():
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
+            
+
 
 ## This is redefined in options.rpy to add text to the about screen.
 define gui.about = ""
@@ -1507,8 +1509,3 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
-
-
-
-
-

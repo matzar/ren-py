@@ -2,18 +2,63 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-image school = "bg girl school.jpg"
-image cat = "cat.png"
-#image eileen happy = "eileen happy.png"
-#image eileen vhappy = "eileen vhappy.png"
 define e = Character("Carrot")
 define l = Character("Pineapple")
 
-image eileen:
-    "eileen happy.png"
+image carrot first:
+    "carrot 01.png"
     pause 1.0
-    "eileen vhappy.png"
+    "carrot 01-blink.png"
+    pause 0.15
+    repeat
+
+image carrot second:
+    "carrot 02.png"
     pause 1.0
+    "carrot 02-blink.png"
+    pause 0.15
+    repeat
+
+image carrot third:
+    "carrot 03.png"
+    pause 1.0
+    "carrot 03-blink.png"
+    pause 0.15
+    repeat
+
+image carrot fourth:
+    "carrot 04.png"
+    pause 1.0
+    "carrot 04-blink.png"
+    pause 0.15
+    repeat
+
+image pineapple first:
+    "pineapple 01.png"
+    pause 1.1
+    "pineapple 01-blink.png"
+    pause 0.15
+    repeat
+
+image pineapple second:
+    "pineapple 02.png"
+    pause 1.1
+    "pineapple 02-blink.png"
+    pause 0.15
+    repeat
+
+image pineapple laugh:
+    "pineapple 03.png"
+    pause 1.1
+    "pineapple 03-2.png"
+    pause 0.15
+    repeat
+
+image pineapple fourth:
+    "pineapple 04.png"
+    pause 1.1
+    "pineapple 04-blink.png"
+    pause 0.15
     repeat
 
 # The game starts here.
@@ -28,39 +73,72 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    # EILEEN
-    show eileen at left
-
+    # CARROT
+    show carrot first:
+        xalign 0.35
+        yalign 0.4
     # with dissolve
-    with fade
-    e "Knock knock."
 
-    # LUCY
-    show lucy happy at right
+    # PINEAPPLE
+    show pineapple second:
+        xalign 0.7
+        yalign 0.4
+    with fade
     # show cat at right:
     #    xalign 1.0
     #    yalign 0.2
+    e "Knock knock."
     l "Who's there?"
 
-    # EILEEN
+    # CARROT
+    hide carrot
+    show carrot second:
+        xalign 0.35
+        yalign 0.4
     e "Painter."
 
-    # LUCY
+    # PINEAPPLE
+    hide pineapple
+    show pineapple first:
+        xalign 0.7
+        yalign 0.4
     l "Painter who?"
 
-    # EILEEN
+    # CARROT
+    hide carrot
+    show carrot third:
+        xalign 0.35
+        yalign 0.4
     e "The painter, who painted all of you as mermaids..."
     e "but instead of being under water..."
+    hide carrot
+    show carrot fourth:
+        xalign 0.35
+        yalign 0.4
     e "it's pee pee."
 
-    # LUCY
-    hide lucy
-    show lucy mad at right:
+    # PINEAPPLE
+    hide pineapple
+    show pineapple laugh:
+        xalign 0.7
+        yalign 0.4
         zoom 1.0
         linear 0.1 zoom 1.05
         linear 0.1 zoom 1.0
         repeat
     l "ahaha that's funny!"
+
+    # PINEAPPLE & CARROT
+    hide pineapple
+    hide carrot
+    show pineapple fourth:
+        xalign 0.7
+        yalign 0.4
+
+    show carrot third:
+        xalign 0.35
+        yalign 0.4
+    l "Oh... she's gone..."
 
     # e "Once you add a story, pictures, and music, you can release it to the world!"
     # menu:
