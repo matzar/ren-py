@@ -1,0 +1,65 @@
+{
+  "editra-linux": {
+    "sums_url": "renpy-6.99.13-editra-linux.sums", 
+    "version": "28c4b28f9a506b96530670b4a39db400df60996e7cc43e7c7258831f4c3cfd14", 
+    "zsync_url": "renpy-6.99.13-editra-linux.zsync", 
+    "json_url": "renpy-6.99.13-editra-linux.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 880, 
+    "digest": "3b118f1d46eaa3089dc40d259a454e18abc28caa6fb31a8e63f44ab31ba6129f"
+  }, 
+  "editra-windows": {
+    "sums_url": "renpy-6.99.13-editra-windows.sums", 
+    "version": "42586d49f9257e639f788c6a96438e87a8f76cdb3651a23208594898527f547d", 
+    "zsync_url": "renpy-6.99.13-editra-windows.zsync", 
+    "json_url": "renpy-6.99.13-editra-windows.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 2728, 
+    "digest": "e92a5936cde9b1b5b9a57742861232bd0d05e0e99409faa56bcd97e909adc0eb"
+  }, 
+  "editra-mac": {
+    "sums_url": "renpy-6.99.13-editra-mac.sums", 
+    "version": "9b770ab9db3ab6119d07119ce81c0d7aeac615c9a5a89769663038b0de462985", 
+    "zsync_url": "renpy-6.99.13-editra-mac.zsync", 
+    "json_url": "renpy-6.99.13-editra-mac.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 3768, 
+    "digest": "1d36820ed5f647d0e0e55e22b4d4eeba575ae844a4761fd0bd6ee9423e4c6415"
+  }, 
+  "jedit": {
+    "sums_url": "renpy-6.99.13-jedit.sums", 
+    "version": "92b10d53c96009cae238fa7d9d5b2cdc1f5b7fbbfd67e541da769ae6da3642c7", 
+    "zsync_url": "renpy-6.99.13-jedit.zsync", 
+    "json_url": "renpy-6.99.13-jedit.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 836, 
+    "digest": "ec3d514e1cbd930de5db308f529dff720de504eab8a3b0dddc131d251c6f3b78"
+  }, 
+  "renios": {
+    "sums_url": "renpy-6.99.13-renios.sums", 
+    "version": "4055618078ab14f3083d2b9d4dadb91d152140f366ea9d6dd569d2d390c1b649", 
+    "zsync_url": "renpy-6.99.13-renios.zsync", 
+    "json_url": "renpy-6.99.13-renios.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 18476, 
+    "digest": "4a4e6366a3dbbe1eafab551c930a015c56cc0ebb2d503cf8e06322ed53b95846"
+  }, 
+  "rapt": {
+    "sums_url": "renpy-6.99.13-rapt.sums", 
+    "version": "1532739ffbb33f229c47c7b14bc3c3785bc65497d5a71256e23ab9224427d16b", 
+    "zsync_url": "renpy-6.99.13-rapt.zsync", 
+    "json_url": "renpy-6.99.13-rapt.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 4532, 
+    "digest": "602658d5e41a3c65ad1b0f6e8715473a9e0a80a360092bb75ed17e6d2edc73be"
+  }, 
+  "sdk": {
+    "sums_url": "renpy-6.99.13-sdk.sums", 
+    "version": "f1997bec34b12ad951e413c187ad32ba11c0c1272d34c1984d0a8f83fc49763f", 
+    "zsync_url": "renpy-6.99.13-sdk.zsync", 
+    "json_url": "renpy-6.99.13-sdk.update.json", 
+    "pretty_version": "Ren'Py 6.99.13.2919", 
+    "sums_size": 12920, 
+    "digest": "24c59832f04f19fe925aa57bde399cf2651f6accb303759c2099055f9b0964e2"
+  }
+}
