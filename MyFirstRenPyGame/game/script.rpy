@@ -3,8 +3,18 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 image school = "bg girl school.jpg"
-define e = Character("Eileen")
-define l = Character("Lucy")
+image cat = "cat.png"
+#image eileen happy = "eileen happy.png"
+#image eileen vhappy = "eileen vhappy.png"
+define e = Character("Carrot")
+define l = Character("Pineapple")
+
+image eileen:
+    "eileen happy.png"
+    pause 1.0
+    "eileen vhappy.png"
+    pause 1.0
+    repeat
 
 # The game starts here.
 label start:
@@ -19,13 +29,17 @@ label start:
     # directory.
 
     # EILEEN
-    show eileen happy at left
+    show eileen at left
+
     # with dissolve
     with fade
     e "Knock knock."
 
     # LUCY
     show lucy happy at right
+    # show cat at right:
+    #    xalign 1.0
+    #    yalign 0.2
     l "Who's there?"
 
     # EILEEN
